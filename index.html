@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!--=============== FONTAWESOME ===============-->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Wally</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/wally2.png" alt="">
+            </a>
+
+        </nav>    
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+
+                <!-- Presupuesto -->
+                <div class="total-amount-container">
+
+                    <h2>Ingresos <i class='bx bx-wallet icon'></i> </h2>
+                    <p class="hide error" id="budget-error">
+                        El valor no puede estar vacío o ser negativo
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Ingrese el valor total">
+                    <button class="submit add" id="total-amount-button"> 
+                        Agregar
+                    </button>
+                </div>
+
+                <!-- Expansión -->
+
+                <div class="user-amount-container">
+
+                    <h2>Gastos <i class='bx bx-money-withdraw icon' ></i></h2>
+                    <p class="hide error" id="product-title-error">
+                        El valor no puede estar vacío
+                    </p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Ingrese el nombre del producto/gasto">
+
+                    <input type="number" id="user-amount" placeholder="Ingrese el valor del producto/gasto">
+                    <button class="submit" id="check-amount">
+                        Agregar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Salida -->
+
+            <div class="output-container flex-space">
+                <div class="">
+                    <p>Ingresos</p>
+                    <span class="" id="amount">0</span>
+                </div>
+                <div class="">
+                    <p>Gastos</p>
+                    <span class="" id="expenditure-value">0</span>
+                </div>
+                <div class="">
+                    <p>Balance</p>
+                    <span class="" id="balance-amount">0</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lista -->
+
+        <div class="list">
+            <h2>Lista de gastos</h2>
+            <div class="list-container" id="list">
+
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+
+        <footer class="footer section">
+       
+            <div class="footer__info container">
+
+                <span class="footer__copy">
+                    &#169; DanielLopezB2
+                </span>
+
+                <div class="footer__privacy">
+                    <a href="#">Terms & Agreements</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            
+        </footer>
+
+        
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
